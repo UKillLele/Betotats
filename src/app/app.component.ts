@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'beto-tattoo';
+  show: boolean;
+
+  constructor() {
+    this.show = false;
+  }
+
+  toggle(): void {
+    this.show = !this.show;
+  }
 }

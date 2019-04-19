@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0px;
+}
+.page {
+  background-image: linear-gradient(100deg, black, gray, black);
+  min-height: 85vh;
+  display: flow-root;
+  color: white;
+  text-align: center;
+}
+h1, h2 {
+  text-align: center;
+  text-shadow: 1vh 1vh 5vh black;
+}
+h1 {
+  font-variant: small-caps;
+  font-size: 10vh;
+  margin: 0;
+  padding-bottom: 2vw;
+}
+h2 {
+  font-size: 5vh;
+}

@@ -1,0 +1,87 @@
+.navbar {
+  background-color: black;
+  height: 15vh;
+  display: block;
+  text-align: center;
+  font-size: 5vh;
+}
+.navbar-logo {
+  display: inline-block;
+  height: 10vh;
+  margin: 2.5vh 4.5vh;
+  float: left;
+  cursor: pointer;
+}
+.navbar ul {
+  margin: 0px;
+  display: inline-block;
+  float: right;
+}
+.navbar-nav li {
+  display: inline-block;
+  padding: 4.5vh;
+}
+.navbar-nav a {
+  text-decoration: none;
+  color: gold;
+}
+.navbar-nav a:hover {
+  color: #f08f0f;
+}
+.navbar-nav a.active {
+  color: #b8860b;
+}
+.hamburger-nav {
+  display: none;
+  height: 15vh;
+  float: right;
+}
+.hamburger-nav img {
+  height: 11vh;
+  margin: 2vh 2vw;
+}
+.mobile-nav {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  text-align: center;
+  line-height: 15vh;
+}
+.mobile-nav ul {
+  width: 100%;
+}
+.mobile-nav a {
+  text-decoration: none;
+  color: gold;
+  list-style: none;
+}
+.footer {
+  bottom: 0;
+  position: fixed;
+  height: 5vh;
+  text-align: center;
+  color: gold;
+  background-color: black;
+  width: 100%;
+}
+.footer p {
+  font-size: 3vh;
+  padding: .75vh;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 1240px) {
+  .hamburger-nav {
+    display: inline-block;
+  }
+  .navbar-nav {
+    display: none;
+  }
+  .hamburger-nav:hover .mobile-nav {
+    display: block;
+  }
+}

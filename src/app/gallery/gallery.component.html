@@ -1,0 +1,13 @@
+<h1>Gallery</h1>
+<div class="gallery-container">
+  <div id="gallery" *ngFor="let image of images$ | async">
+    <a href="{{image.link}}" target="iframe">
+      <img src="{{image.file}}" alt="{{image.alt}}" class="gallery-img" (click)="iframeDisplay()">
+    </a>
+  </div>
+</div>
+<div class="iframe-container" *ngIf="display">
+  <button type="button" name="close" class="close" (click)="display = false;">x</button>
+  <iframe name="iframe" class="iframe" id="iframe" onload="(this.height=this.contentWindow.document.body.scrollHeight + 10) + 'px'; (this.width=this.contentWindow.document.body.scrollWidth + 10) + 'px';"></iframe>
+  <div class="iframe-container" (click)="display = false;"></div>
+</div>
